@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/test.css">
+  </head>
+  <body class="flex flex-col justify-center">
+    <div class="container">
+      Name Generator
+      <div class="flex space-x-3">
+        <input type="text" name="nameField" id="nameField" value="" placeholder="">
+        Name
+        <input type="number" name="amountGroupsField" id="amountField" value="" placeholder="">
+        Amount of Groups
+        <input type="number" name="amountNamesField" id="amountField" value="" placeholder="">
+        Amount of Names Per Group
+      </div>
+    </div>
+    <div class="container">
+      <div class="flex space-x-3">
+        <button id="generateBtn">Generate Name</button>
+        <button id="saveBtn">Save Name</button>
+        <button id="generateGroupBtn">Generate Group</button>
+      </div>
+      <div class="flex space-x-3" id="nameDisplay"></div>
+    </div>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script type="module" src="./scripts/app.js"></script>
+  </body>
+</html>
